@@ -1,4 +1,8 @@
-## Reproducer instructions
+# micronaut-hibernate-native-reproducer
+
+Sample repository to reproduce [micronaut-projects/micronaut-sql#1203](https://github.com/micronaut-projects/micronaut-sql/issues/1203)
+
+## Steps to reproduce
 
 - Start a Postgres container:
 
