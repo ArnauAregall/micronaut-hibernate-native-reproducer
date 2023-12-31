@@ -1,0 +1,25 @@
+micronaut:
+  application:
+    name: micronaut-hibernate-native-reproducer
+
+datasources:
+  default:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/postgres?currentSchema=demo
+    username: postgres
+    password: postgres
+
+jpa:
+  default:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: none
+
+flyway:
+  datasources:
+    default:
+      enabled: true
+      default-schema: demo
+      locations:
+        - db/migrations
